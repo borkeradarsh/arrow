@@ -1,0 +1,760 @@
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #1a0f45;
+
+}
+header{
+    width: 100%;
+    background-color: #ffffff;
+    height: 125px;
+    margin: 0%;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 5%;
+    z-index: 1000;
+}
+.block{
+    width: 100%;
+    height: 20px;
+    background-color: #1a0f45;
+    margin-top: 0px;
+}
+
+
+/* Style for navigation menu */
+.nav-menu {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-evenly; /* Space out the nav items */
+    margin-left: 150px;
+    margin-top: -80px;
+    background-color: #ffffff;
+    
+    
+}
+
+/* Style for navigation items */
+.nav-item {
+    color: #1872ab; /* Text color */
+    font-size: 24px;
+    text-decoration: none; /* Remove underline from links */
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 25px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold ;
+    background-color: #ffffff;
+}
+.logo{
+    background-color: #ffffff;
+    margin-left: 30px;
+}
+
+/* Hover effect for navigation items */
+.nav-item:hover {
+    background-color: #555; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+.solar1{
+    width: 100%;
+    height: 600px;
+    border-radius: 5px; 
+    opacity: 30%;
+    margin-top: 10%;
+
+}
+.overlayh1{
+    position: absolute;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 25%;
+    margin-left: 2%;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: #00550e;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 8px;
+}
+
+.calculator {
+    width: 400px;
+    margin-left: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0 , 0, 100);
+    text-align: center;
+    background-color: white;
+    margin-bottom: 80px;
+    margin-top: 100px;
+    border-bottom-left-radius : 0px;
+    z-index: 2;
+    position: relative;
+}
+h2 {
+    text-align: center; /* Center the title */
+    color: #000000; /* Darker color for the title */
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    background-color: transparent;
+}
+label {
+    display: flex; /* Block display for labels */
+    margin-bottom: 15px; /* Space between label and input */
+    color: #555; /* Medium gray for labels */
+    text-align: center;
+}
+input[type="number"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for input */
+    text-align: center;
+}
+button {
+    width: 100%; /* Full width for button */
+    padding: 10px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Larger font size for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+.solar-calculator {
+    width: 400px; /* Set a fixed width for the calculator */
+    margin: 100px auto; /* Center the calculator vertically and horizontally */
+    padding: 20px; /* Add padding around the calculator */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #ffffff; /* White background */
+}
+
+.solar-calculator h2 {
+    text-align: center; /* Center the title */
+    color: #1872ab; /* Title color */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 10px; /* Space between label and input */
+    color: #555; /* Medium gray for labels */
+    font-weight: bold; /* Bold text for labels */
+}
+
+input[type="number"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px; /* Padding inside the input */
+    margin-bottom: 15px; /* Space between inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for input */
+    text-align: center; /* Center text in input */
+}
+
+button {
+    width: 100%; /* Full width for button */
+    padding: 10px; /* Padding inside the button */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 18px; /* Larger font size for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.result {
+    margin-top: 20px; /* Space above the result */
+    margin-left: 100px;
+    padding: 20px; /* Padding inside the result box */
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light gray background */
+    text-align: center; /* Center the result text */
+    color: #ff0000; /* Dark text color */
+    font-size: 30px; /* Larger font size for better readability */
+    font-weight: bold; /* Bold text for emphasis */
+    display: none; /* Initially hidden */
+    transition: all 0.3s ease; /* Smooth transition for visibility changes */
+}
+
+.result.visible {
+    display: block; /* Show result when visible class is added */
+}
+.container{
+    width: 100%;
+    display: flex;
+    margin: auto;
+
+}
+.rectangle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+}
+#rect1{
+    width: 900px;
+    height: 150px;
+    background-color: #888888;
+    border-bottom-left-radius : 5px;
+    border-bottom-right-radius : 5px;
+    margin-left: 300px;
+}
+#rect2{
+    width: 850px;
+    height: 25px;
+    background-color: #00550e;
+    border-bottom-left-radius : 5px;
+    border-bottom-right-radius : 5px;
+    margin-left: 325px;
+    margin-bottom: 40px;
+}
+
+.stat{
+    margin-left: 40px;
+    background-color: transparent;
+    margin: auto;
+    
+}
+.stat h2{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    margin: auto;
+}
+.stat p{
+    font-weight: bold;
+    background-color: transparent;
+    margin: auto;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+.text1{
+    margin-top: 60px;
+    margin-left: 390px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.solar2{
+    border-radius: 5px;
+    margin: auto;
+    width: 45%;
+    margin-bottom: 0px;
+}
+.text2{
+    position: absolute;
+    font-size: 45px;
+    font-weight: bold;
+    margin-left: 700px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent;
+}
+.expertise{
+    position: absolute;
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    margin-left: 700px ;
+    margin-top: 150px;
+}
+.para1{
+    position: absolute;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: transparent;
+    margin-left: 715px ;
+    margin-top: 140px;   
+    
+}
+.solar3{
+    border-radius: 5px;
+    margin-left: 775px;
+    margin-top: -50px;
+    width: 45%;
+    margin-bottom: 40px;
+}
+.text3{
+    position: absolute;
+    font-size: 45px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent;
+}
+.para2{
+    position: absolute;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: transparent;
+    margin-left: 0px ;
+    margin-top: 120px;  
+     padding: 40px;
+     margin-right: 800px;
+    
+}
+.solar4{
+    border-radius: 5px;
+    width: 45%;
+    height: 650px;
+    margin-top: -150px;
+}
+.text4{
+    position: absolute;
+    font-size: 45px;
+    font-weight: bold;
+    margin-left: 750px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent;
+}
+.para3{
+    position: absolute;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: transparent;
+    margin-left: 735px ;
+    margin-top: 120px;   
+    padding: 40px;
+}
+
+.imgbutton{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.imgbutton img{
+    width: 20%;
+    border-radius: 10px;
+    margin-left: 600px;
+    margin-top: -700px;
+    margin-bottom: 75px;
+}
+.textcal{
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 750px;
+    margin-bottom: 80px;
+    margin-top: -300px;
+    margin-right: 100px;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: transparent;
+}
+#rect3{
+    position: absolute;
+    width: 201px;
+    height: 20px;
+    background-color: #545454;
+    border-bottom-left-radius : 0px;
+    border-bottom-right-radius : 0px;
+    margin-left:140px;
+    margin-bottom: 80px;
+    margin-top: -171px;
+    rotate: 90deg;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 2);
+}
+
+.about{
+    color: #ffffff;
+    margin-top: 180px;
+    margin-left: 570px;
+}
+
+.ban1{
+    width: 100%;
+    height: 600px;
+    
+    margin: auto;
+    margin-top: 10%;
+    opacity: 20%;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+.overlayh2{
+    position: absolute;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 40%;
+    margin-left: 1%;
+    color: #ffffff;
+    opacity: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: #00550e;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 8px;
+}
+.vision{ 
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    margin-left: 150px;
+    margin-top: -400px;
+    transform: scale(0.4);
+    box-shadow:  -5px -5px 10px rgba(0, 0, 0, 2), /* Shadow above */
+    5px 5px 10px rgba(0, 0, 0, 2);
+    margin-bottom: 40px;
+}
+#rect6{
+    width: 80%;
+    height: 300px;
+    background-color: #888888;
+    margin-left: -20px;
+    margin-bottom: 40px;
+    box-shadow:  0 -5px 10px rgba(0, 0, 0, 2), /* Shadow above */
+                0 5px 10px rgba(0, 0, 0, 2);
+}
+.textabout{
+    color: #000000;
+    position: absolute;
+    margin-top: -280px;
+    background-color: transparent;
+    margin-right: 300px;
+    font-size: 20px;
+    margin-left: 20px;
+    
+}
+.abouttext{
+    color: #000000;
+    position: absolute;
+    margin-top: -220px;
+    margin-left: 20px;
+    background-color: transparent;
+    margin-right: 900px;
+    font-size: 20px;
+}
+.footer{
+    width: 100%;
+    background-color: #ffffff;
+    height: 300px;
+    margin: auto;
+    border-radius: 5px;
+    margin-left: -10px;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    margin-top: 100px;
+
+}
+.location{
+    margin-left: 60px;
+    scale: 0.3;
+    background-color: transparent;
+    margin-top: -100px;
+}
+.call{
+    margin-left: 170px;
+    scale: 0.3;
+    background-color: transparent;
+    margin-top: -100px;
+}
+.mail{
+    margin-left: 50px;
+    scale: 0.3;
+    background-color: transparent;
+    margin-top: -100px;
+}
+.loc{
+    position: absolute;
+    font-size: 25px;
+    margin-right: 1000px;
+    margin-top: -100px;
+    margin-left: 20px;
+    color: #1a0f45;
+}
+.phone{
+    position: absolute;
+    font-size: 25px;
+    margin-right: 500px;
+    margin-top: -100px;
+    margin-left: 700px;
+    color: #1a0f45;
+}
+.email{
+    position: absolute;
+    font-size: 25px;
+    margin-top: -100px;
+    margin-right: 100px;
+    margin-left: 1170px;
+    color: #1a0f45;
+}
+#bl{
+    position: absolute;
+    width: 20%;
+    height: 220px;
+    background-color: #888888;
+    margin-left: 230px;
+    margin-top: 205px;
+    z-index: 1;
+}
+#rect8{
+    width: 80%;
+    height: 300px;
+    background-color: #888888;
+    margin-left: 310px;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    box-shadow:  0 -5px 10px rgba(0, 0, 0, 2), /* Shadow above */
+                0 5px 10px rgba(0, 0, 0, 2);
+}
+.textnext{
+    color: #000000;
+    position: absolute;
+    margin-top: -280px;
+    background-color: transparent;
+    margin-left: 370px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.res{
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    margin-left: -200px;
+    margin-top: -400px;
+    transform: scale(0.4);
+    box-shadow:  -5px -5px 10px rgba(0, 0, 0, 2), /* Shadow above */
+    5px 5px 10px rgba(0, 0, 0, 2);
+    margin-bottom: 400px;
+
+}
+.nexttext{
+    color: #000000;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 900px;
+    background-color: transparent;
+    margin-right: 20px;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+.aboutpage .footer{
+    width: 99.5%;
+    margin-top: 240px;
+}
+#rect9{
+    width: 80%;
+    height: 300px;
+    background-color: #888888;
+    margin-left: -20px;
+    margin-bottom: 40px;
+    margin-top: 250px;
+    box-shadow:  0 -5px 10px rgba(0, 0, 0, 2), /* Shadow above */
+                0 5px 10px rgba(0, 0, 0, 2);
+}
+.txt{
+    color: #000000;
+    position: absolute;
+    margin-top: -280px;
+    background-color: transparent;
+    margin-right: 340px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.last{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    margin-left: 150px;
+    margin-top: -400px;
+    transform: scale(0.4);
+    box-shadow:  -5px -5px 10px rgba(0, 0, 0, 2), /* Shadow above */
+    5px 5px 10px rgba(0, 0, 0, 2);
+    margin-bottom: 40px;
+}
+.lasttxt{
+    color: #000000;
+    position: absolute;
+    margin-top: -200px;
+    margin-left: 20px;
+    background-color: transparent;
+    margin-right: 900px;
+    font-size: 20px;
+}
+.serv{
+    width: 100%;
+    height: 600px;
+    
+    margin: auto;
+    margin-top: 10%;
+    opacity: 20%;
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+.overlayh3{
+    position: absolute;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 37%;
+    margin-left: 1%;
+    color: #ffffff;
+    opacity: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration-color: #00550e;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 8px;
+}
+.comm{
+    margin-left: 25%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+}
+#rect10{
+    width: 60%;
+    height: 300px;
+    background-color: #888888;
+    margin-left: 270px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow:  0 -5px 10px rgba(0, 0, 0, 2), /* Shadow above */
+                0 5px 10px rgba(0, 0, 0, 2);
+}
+.comm1{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    margin-left: -2.6%;
+    margin-top: -420px;
+    transform: scale(0.5);
+    box-shadow:  0px 4px 10px rgba(0, 0, 0, 2);
+    margin-bottom: 40px;
+}
+.commtext{
+    color: #000000;
+    position: absolute;
+    margin-top: -21%;
+    background-color: transparent;
+    margin-right: 30%;
+    font-size: 20px;
+    margin-left: 25%;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+.servicepage .footer{
+    margin-top: 20%;
+}
+.resi{
+    margin-left: 34%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    margin-top: 15%;
+}
+#rect11{
+    width: 60%;
+    height: 300px;
+    background-color: #888888;
+    margin-left: 270px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow:  0 -5px 10px rgba(0, 0, 0, 2), /* Shadow above */
+                0 5px 10px rgba(0, 0, 0, 2);
+}
+.restext{
+    color: #000000;
+    position: absolute;
+    margin-top: -21%;
+    background-color: transparent;
+    margin-right: 29%;
+    font-size: 20px;
+    margin-left: 25%;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+.ressolar1{
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    margin-left: -2.6%;
+    margin-top: -420px;
+    transform: scale(0.5);
+    box-shadow:  0px 4px 10px rgba(0, 0, 0, 2);
+    margin-bottom: 40px;
+}
+.blogpage .footer{
+    width: 100%;
+    margin-top: 330px;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+@media (max-width: 1024px) {
+    .block{
+        height: 70px;
+        margin-bottom: 60px;
+    }
+    .solar1{
+        height: 400px;
+        width: 100%;
+        transform: scale(1.3);
+        justify-content: center;
+        margin-left: 17%;
+        margin-bottom: 40px;
+    }
+    .overlayh1{
+        font-size: 60px;
+    }
+    .text1{
+        font-size: 40px;
+    }
+    #rect1{
+        margin-left: 330px;
+    }
+    #rect2{
+        width: 600px;
+        margin-left: 365px;
+    }
+    .text2{
+        font-size: 50px;
+        margin-left: 400px;
+    }
+}
